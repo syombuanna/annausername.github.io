@@ -1,0 +1,216 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing:border-box ;
+}
+/* General Styles */
+body {
+    font-family: sans-serif;
+  
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 1rem 0;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f0f0f0;
+  }
+  
+  .ham-menu {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  nav {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    /* position: fixed; */
+  }
+  
+  nav li {
+    margin-right: 1rem;
+    list-style: none;
+    display: inline-block;
+    /* border: 2px solid white; */
+   
+  }
+  
+  nav button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    
+  }
+  
+  /* Main Styles */
+  main {
+    padding: 2rem 0;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .text-overlay {
+    position: relative;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .text-overlay h2 {
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer Styles */
+  footer {
+    padding: 1rem 2rem;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  
+  footer p {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav {
+      flex-direction: column;
+      text-align: center;
+      margin-top: 1rem;
+    }
+  
+    .ham-menu {
+      display: block;
+    }
+  
+    section {
+      padding: 0.5rem 1rem;
+    }
+  
+    .container {
+      flex-direction: column;
+    }
+  }
+  
+  /* Specific Section Styles */
+  
+  #home .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  #home h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .text-overlay aside {
+    padding: 1rem;
+  }
+  
+  #schemesOfWork .container,
+  #lessonPlan .container,
+  #studyNotes .container,
+  #studyQuizzes .container {
+    flex-wrap: wrap;
+  }
+  
+  #schemesOfWork img,
+  #lessonPlan img,
+  #studyNotes img,
+  #studyQuizzes img {
+    width: 48%;
+    margin-bottom: 1rem;
+  }
+  
+  #lessonPlan .container:nth-child(2),
+  #studyNotes .container,
+  #studyQuizzes .container {
+    margin-top: 2rem;
+  }
+  
+  #lessonPlan h3,
+  #studyNotes h2,
+  #studyQuizzes h1 {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Button Styles */
+  
+  button {
+    background-color: #333;
+    color: gray;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+   animation: hover 0.6s  0s linear forwards ;
+   transition: 2s;
+   
+  }
+  @keyframes hover{
+    0%{
+      transform: scale(1.2);
+      background-color: whitesmoke;
+      border-radius: 10px;
+      box-shadow: 5px 3px 4px -4px black;
+    }
+    50%{
+      transform: scale(1.3);
+      background-color: whitesmoke;
+      border-radius: 10px;
+      box-shadow: 5px 3px 4px -4px black;
+    }
+    100%{
+      transform: scale(1.4);
+      background-color: whitesmoke;
+      border-radius: 10px;
+      box-shadow: 5px 3px 4px -4px black;
+    }
+  }
+  
+  
+
+
+
+
+
+
+
+
